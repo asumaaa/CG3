@@ -9,7 +9,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int)
 	WinApp* win = nullptr;
 	DirectXCommon* dxCommon = nullptr;
 	Input* input = nullptr;	
-	GameScene* gameScene = nullptr;
+	GameScene* gameScene = nullptr; 
 
 	// ゲームウィンドウの作成
 	win = WinApp::GetInstance();
