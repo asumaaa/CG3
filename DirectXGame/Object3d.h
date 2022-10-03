@@ -41,9 +41,8 @@ private: // 定数
 	static const float radius;				// 底面の半径
 	static const float prizmHeight;			// 柱の高さ
 	static const int planeCount = division * 2 + division * 2;		// 面の数
-	//static const int vertexCount = planeCount * 3;		// 頂点数
 	static const int vertexCount = 4;		// 頂点数
-	static const int indexCount = 3 * 2;	//インデックス数
+	static const int indexCount = 3*2;		// インデックス数
 
 public: // 静的メンバ関数
 	/// <summary>
@@ -100,6 +99,8 @@ public: // 静的メンバ関数
 	/// </summary>
 	/// <param name="move">移動量</param>
 	static void CameraMoveVector(XMFLOAT3 move);
+	//注視点は動かないカメラの移動
+	static void CameraMoveEyeVector(XMFLOAT3 move);
 
 private: // 静的メンバ変数
 	// デバイス
